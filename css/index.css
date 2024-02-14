@@ -1,0 +1,17 @@
+body{
+    padding: 25px;
+    background-color: #001f3f; /* Dark blue background */
+    
+  }
+  .title {
+     color: white; /* White text color */
+     align-items: center;
+  }
+  area {
+    display: flex;
+  }
+
+  img {
+    max-width: 100%; /* Make sure images don't exceed their natural size */
+    margin: 5px; /* Add spacing between images */
+  }
