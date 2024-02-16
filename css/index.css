@@ -9,9 +9,12 @@ body{
   }
   area {
     display: flex;
+        justify-content: center;
+        flex-direction: row;
   }
 
   img {
-    max-width: 100%; /* Make sure images don't exceed their natural size */
-    margin: 5px; /* Add spacing between images */
+    width: 100%; /* Make the images fill the container */
+        max-width: 30%; /* Set max-width for smaller screens */
+        margin: 5px;/* Add spacing between images */
   }
