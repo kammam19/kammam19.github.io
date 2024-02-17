@@ -1,17 +1,28 @@
-body{
-    padding: 25px;
-    background-color: #001f3f; /* Dark blue background */
-    
-  }
-  .title {
-     color: white; /* White text color */
-     align-items: center;
-  }
-  area {
-    display: flex;
-  }
+fieldset {
+  padding: 25px;
+  background-color: #001f3f; /* Dark blue background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none; /* Remove fieldset border */
+}
 
-  img {
-    max-width: 100%; /* Make sure images don't exceed their natural size */
-    margin: 5px; /* Add spacing between images */
-  }
+
+.title {
+  color: white; /* White text color */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%; /* Make the images fill the container */
+  max-width: 30%; /* Set max-width for smaller screens */
+  margin: 5px; /* Add spacing between images */
+}
+body{
+  background-color: bisque;
+     
+}
