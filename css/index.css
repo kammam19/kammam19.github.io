@@ -1,36 +1,77 @@
+img.gallery-image {
+  width: 100%;
+  /* Make the images fill the container */
+  max-width: 30%;
+  /* Set max-width for smaller screens */
+  margin: 5px;
+  /* Add spacing between images */
+}
+
+.additional-images {
+  display: flex;
+  flex-wrap: wrap;
+  /* Wrap images to the next line when they exceed container width */
+  justify-content: center;
+}
+
 fieldset {
   padding: 25px;
-  background-color: #001f3f; /* Dark blue background */
+  background-color: #001f3f;
+  /* Dark blue background */
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: none; /* Remove fieldset border */
+  border: none;
+  /* Remove fieldset border */
 }
-
 
 .title {
-  color: white; /* White text color */
+  color: white;
+  /* White text color */
 }
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid red;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid green;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+}
+
+section {
+  margin: 5px;
+  box-sizing: border-box;
+  width: 48%;
+  /*responsive design*/
+}
+
+article {
+  grid-gap: 10px;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 .image-container {
   display: flex;
   justify-content: center;
+  width: 100%; /* Ensure full width */
 }
-
-img {
-  width: 100%; /* Make the images fill the container */
-  max-width: 30%; /* Set max-width for smaller screens */
-  margin: 5px; /* Add spacing between images */
-}
-body{
-  background-color: bisque;
-     
-}
-
-
-
-
-
-
-
-

@@ -1,11 +1,19 @@
 nav {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    background-color: #001f3f;
-    margin: 5px;
-    padding: 10px 5px;
-    align-items: center; /* จัดกลุ่มสมดุลตรงกลาง */
-  }
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: #001f3f;
+  margin: 5px;
+  padding: 10px 5px;
+  align-items: center; /* จัดกลุ่มสมดุลตรงกลาง */
+}
+
+nav a {
+  text-decoration: none; /* เอา underline ออก */
+  color: #ffffff; /* สีของตัวหนังสือ */
+  font-size: 25px; /* ขนาดตัวหนังสือ */
+  padding: 35px; /* ขนาดช่องรอบตัวหนังสือ */
+}
+
   
   ul {
     list-style-type: none;
