@@ -7,21 +7,23 @@
     <title>เก็บกระดาษให้ทัน!</title>
     <link rel="stylesheet" href="css/game.css">
 </head>
+
 <body>
     <ul id="scoreboard">
-        <li>เวลาเหลือ: <span id="time">30</span></li>
-        <li><button onclick="startGame();" id="btn">เล่น</button></li>
-        <li>เก็บได้: <span id="score">0</span></li>
+        <li>Timer : <span id="time">30</span></li>
+        <li><button onclick="startGame();" id="btn">Play</button></li>
+        <li>Pictures : <span id="score">0</span></li>
     </ul>
     <div id="scene">
-        <image src="Pic/Game_Back.jpg" id="ground">
-        <image style="top: 80px; left: 230px;" onclick="fallDown(this)" src="Pic/Game_pic.PNG" class="pic">
-        <image style="top: 220px; left: 120px;" onclick="fallDown(this)" src="Pic/Game_pic.PNG" class="pic">
-        <image style="top: 250px; left: 280px;" onclick="fallDown(this)" src="Pic/Game_pic.PNG" class="pic">
-        <image style="top: 380px; left: 50px;" onclick="fallDown(this)" src="Pic/Game_pic.PNG" class="pic">
-        <image style="top: 0px; left: 120px;" onclick="fallDown(this)" src="Pic/Game_pic.PNG" class="pic">
+        <img src="Pic/Game_Back.jpg" id="ground">
+        <img style="top: 80px; left: 230px;" onclick="fallDown(this)" src="Pic/Game_pic.PNG" class="pic">
+        <img style="top: 220px; left: 120px;" onclick="fallDown(this)" src="Pic/Game_pic.PNG" class="pic">
+        <img style="top: 250px; left: 280px;" onclick="fallDown(this)" src="Pic/Game_pic.PNG" class="pic">
+        <img style="top: 380px; left: 50px;" onclick="fallDown(this)" src="Pic/Game_pic.PNG" class="pic">
+        <img style="top: 0px; left: 120px;" onclick="fallDown(this)" src="Pic/Game_pic.PNG" class="pic">
     </div>
-    <p style="width: 400px; margin: 0 auto;">เก็บได้ทั้งหมด: <span id="high">0</span></p>
+      
+    <p style="width: 400px; margin: 0 auto;"> <span id="high"></span></p>
     <script src="javaScript/game.js"></script>
 </body>
 </html>

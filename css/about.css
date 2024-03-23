@@ -1,53 +1,70 @@
+/* Reset default styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* Set default font family */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    background-color: #f4f4f4; /* Set background color */
 }
+
+/* Container styles */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Set maximum width */
+    margin: 20px auto; /* Center container horizontally with 20px margin at the top and bottom */
+    background-color: #fff; /* Set background color */
+    padding: 20px; /* Add padding */
+    border-radius: 8px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
+
+/* Profile header styles */
 .profile-header {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
+    text-align: center; /* Center align text */
+    padding-bottom: 20px; /* Add bottom padding */
+    border-bottom: 1px solid #ccc; /* Add bottom border */
 }
+
+/* Profile image styles */
 .profile-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
+    width: 150px; /* Set width */
+    height: 150px; /* Set height */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Cover the whole area */
+    margin-bottom: 10px; /* Add bottom margin */
 }
+
+/* Profile name styles */
 .profile-header h1 {
-    margin: 0;
-    color: #333;
+    margin: 0; /* Reset margin */
+    color: #333; /* Set text color */
 }
+
+/* Profile description styles */
 .profile-header p {
-    color: #666;
+    color: #666; /* Set text color */
 }
+
+/* Profile info styles */
 .profile-info {
-    margin-top: 20px;
+    margin-top: 20px; /* Add top margin */
 }
+
+/* Profile info title styles */
 .profile-info h2 {
-    color: #333;
-    margin-bottom: 10px;
+    color: #333; /* Set text color */
+    margin-bottom: 10px; /* Add bottom margin */
 }
+
+/* Profile info text styles */
 .profile-info p {
-    color: #666;
-    margin-bottom: 5px;
+    color: #666; /* Set text color */
+    margin-bottom: 5px; /* Add bottom margin */
 }
+
 /* CSS for the A01 image */
 .a01-image {
-    height: auto; 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    
+    height: auto; /* Allow the height to adjust based on width */
+    display: block; /* Make it a block element */
+    margin-left: auto; /* Center align horizontally */
+    margin-right: auto; /* Center align horizontally */
+    width: 40%; /* Set width */
 }

@@ -1,52 +1,50 @@
+/* Styles for the header */
+header {
+  background-color: #333; /* Set background color */
+  color: white; /* Set text color */
+  text-align: center; /* Center align text */
+  padding: 20px; /* Add padding */
+}
 
-  
-  header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
- 
-  
-  section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f5f5f5;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 50px; /* เพิ่มค่า margin-bottom ที่มีค่าเท่ากับความสูงของ footer */
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  
+/* Styles for sections */
+section {
+  max-width: 800px; /* Set maximum width */
+  margin: 20px auto; /* Center align section with 20px margin at the top and bottom */
+  padding: 20px; /* Add padding */
+  background-color: #f5f5f5; /* Set background color */
+}
 
-  img {
-    width: 100%; /* ทำให้รูปภาพเต็มความกว้างของพ่อคุณ */
-    max-width: 300px; /* กำหนดขนาดสูงสุดเป็น 300px */
-    height: auto; /* ทำให้สัดส่วนของรูปภาพไม่เปลี่ยนแปลง */
-    display: block; /* ปรับการแสดงผลเป็น block element */
-    margin: 10px auto; /* ให้รูปภาพอยู่ตรงกลางและมีระยะห่าง 10px รอบ ๆ */
-  }
-/* ตัวอย่างการทำให้ตัวอักษรอยู่ตรงกลางภายใน Element */
+/* Reset default styles for the body */
+body {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  margin-bottom: 50px; /* Add bottom margin equal to the height of the footer */
+}
+
+/* Styles for the footer */
+footer {
+  background-color: #333; /* Set background color */
+  color: white; /* Set text color */
+  text-align: center; /* Center align text */
+  padding: 10px; /* Add padding */
+  position: fixed; /* Fix the footer to the bottom of the viewport */
+  bottom: 0; /* Align to the bottom */
+  width: 100%; /* Set width to 100% of the viewport */
+}
+
+/* Styles for images */
+img {
+  width: 100%; /* Make the image full width */
+  max-width: 300px; /* Set maximum width to 300px */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Display as block element */
+  margin: 10px auto; /* Center align image with 10px margin around */
+}
+
+/* Example of center-aligning text within elements */
 section h2 {
-  text-align: center;
+  text-align: center; /* Center align heading text */
 }
 section p {
-  text-align: center;
+  text-align: center; /* Center align paragraph text */
 }
-
- 

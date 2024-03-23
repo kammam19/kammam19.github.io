@@ -18,37 +18,48 @@ function showTime() {
 
 // ฟังก์ชันสำหรับลดเวลา
 function reduceTime() {
-    if (isPlaying) {
-      if (time > 0) {
-        time--;
-        showTime();
-      } else {
-        // หยุดจับเวลา
-        clearInterval(timer);
-  
-        // จบเกม
-        endGame();
-      }
+  if (isPlaying) {
+    if (time > 0) {
+      time--;
+      showTime();
+    } else {
+      // หยุดจับเวลา
+      clearInterval(timer);
+
+      // จบเกม
+      endGame();
     }
   }
-  
+}
 
 // ฟังก์ชันสำหรับเริ่มเกม
 function startGame() {
-  // ปิดใช้งานปุ่ม
-  btnStart.disabled = 'disabled';
+  // ตรวจสอบว่าเกมไม่ได้เล่นอยู่แล้ว และเริ่มจับเวลาเพิ่มขึ้น
+  if (!isPlaying) {
+    // ปิดใช้งานปุ่ม
+    btnStart.disabled = 'disabled';
 
-  // ตั้งค่าสถานะเกม
-  isPlaying = true;
+    // ตั้งค่าสถานะเกม
+    isPlaying = true;
 
-  // เริ่มจับเวลา
-  timer = setInterval(reduceTime, 1000); // ลดเวลาทีละ 1 วินาที
+    // ตรวจสอบว่าเวลาไม่เกิน 30 และเพิ่มเวลาเริ่มต้น
+    if (time < 30) {
+      time++;
+    }
 
-  // แสดงภาพ
-  for (var i = 0; i < fallingPics.length; i++) {
-    fallingPics[i].style.display = 'inline-block';
+    // เริ่มจับเวลา
+    timer = setInterval(reduceTime, 1000); // ลดเวลาทีละ 1 วินาที
+
+    // แสดงภาพ
+    for (var i = 0; i < fallingPics.length; i++) {
+      fallingPics[i].style.display = 'inline-block';
+    }
+
+    // การลดเวลาทีละ 1 วินาทีเริ่มต้นทันทีเมื่อเริ่มเกม
+    showTime();
   }
 }
+
 
 // ฟังก์ชันสำหรับจับภาพที่ตกลงมา
 function fallDown(pic) {
@@ -66,8 +77,7 @@ function fallDown(pic) {
     // กำหนดเวลาสุ่มสำหรับการปรากฏตัวของภาพใหม่
     setTimeout(function () {
       // แสดงภาพใหม่
-      pic.style.display = 'inline-block';
-      pic.style.top = '80px'; // ตั้งค่าตำแหน่งเริ่มต้นของภาพใหม่
+      pic.style.display = 'inline-block';// ตั้งค่าตำแหน่งเริ่มต้นของภาพใหม่
     }, Math.random() * 1000 + 500);
   }
 }
@@ -109,10 +119,3 @@ showTime();
 
 // เพิ่ม event listener สำหรับปุ่ม play
 btnStart.addEventListener('click', startGame);
-
-// เพิ่ม event listener สำหรับภาพ
-for (var i = 0; i < fallingPics.length; i++) {
-  fallingPics[i].addEventListener('click', function () {
-    fallDown(this);
-  });
-}

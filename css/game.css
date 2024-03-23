@@ -1,56 +1,64 @@
+/* Set font family and text transformation for HTML and body */
 html,
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set font family */
+    text-transform: uppercase; /* Transform text to uppercase */
 }
 
+/* Styles for the scene */
 #scene {
-    width: 400px;
-    height: 550px;
-    background-color: aquamarine;
-    overflow: hidden;
-    margin: 16px auto;
-    position: relative;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Set width */
+    height: 550px; /* Set height */
+    background-color: aquamarine; /* Set background color */
+    overflow: hidden; /* Hide overflowing content */
+    margin: 16px auto; /* Center align with 16px margin */
+    position: relative; /* Position relative */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
+/* Styles for pictures */
 .pic {
-    position: absolute;
-    width: 100px;
-    height: auto;
-    transition: top 0.5s ease;
+    position: absolute; /* Position absolute */
+    width: 100px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    transition: top 0.5s ease; /* Add transition effect for 'top' property */
 }
 
+/* Styles for the ground */
 #ground {
-    position: absolute;
-    display: block;
-    width: 400px;
-    bottom: 0;
+    position: absolute; /* Position absolute */
+    display: block; /* Display as block element */
+    width: 400px; /* Set width */
+    bottom: 0; /* Align to the bottom */
 }
 
+/* Styles for the scoreboard */
 #scoreboard {
-    width: 400px;
-    margin: 4px auto;
-    padding: 0;
-    background-color: eaeaea;
+    width: 400px; /* Set width */
+    margin: 4px auto; /* Center align with 4px margin */
+    padding: 0; /* Reset padding */
+    background-color: eaeaea; /* Set background color */
 }
 
+/* Clear floats */
 #scoreboard:after {
-    clear: both;
-    display: block;
-    content: "";
+    clear: both; /* Clear floats */
+    display: block; /* Display as block element */
+    content: ""; /* Add content */
 }
 
+/* Styles for scoreboard items */
 #scoreboard li {
-    list-style: none;
-    box-sizing: border-box;
-    width: 33%;
-    padding: 4px;
-    text-align: center;
-    float: left;
+    list-style: none; /* Remove list style */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    width: 33%; /* Set width to 33% */
+    padding: 4px; /* Add padding */
+    text-align: center; /* Center align text */
+    float: left; /* Float elements to the left */
 }
 
+/* Styles for span within scoreboard */
 #span {
-    font-weight: bold;
-    color: blueviolet;
+    font-weight: bold; /* Set font weight to bold */
+    color: blueviolet; /* Set text color */
 }

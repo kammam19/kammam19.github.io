@@ -1,79 +1,81 @@
+/* Styles for images within the gallery */
 img.gallery-image {
-  width: 100%;
-  /* Make the images fill the container */
-  max-width: 30%;
-  /* Set max-width for smaller screens */
-  margin: 5px;
-  /* Add spacing between images */
+  width: 100%; /* Make the images fill the container */
+  max-width: 30%; /* Set max-width for smaller screens */
+  margin: 5px; /* Add spacing between images */
 }
 
+/* Styles for additional images container */
 .additional-images {
-  display: flex;
-  flex-wrap: wrap;
-  /* Wrap images to the next line when they exceed container width */
-  justify-content: center;
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Wrap images to the next line when they exceed container width */
+  justify-content: center; /* Center align items horizontally */
 }
 
+/* Styles for fieldset */
 fieldset {
-  padding: 25px;
-  background-color: #001f3f;
-  /* Dark blue background */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: none;
-  /* Remove fieldset border */
+  padding: 25px; /* Add padding */
+  background-color: #001f3f; /* Dark blue background */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center align items horizontally */
+  border: none; /* Remove fieldset border */
 }
 
+/* Styles for title */
 .title {
-  color: white;
-  /* White text color */
+  color: white; /* Set text color */
 }
 
+/* Styles for article */
 article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center align items horizontally */
 }
 
+/* Styles for main */
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid red;
-  background-color: #001f3f;
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center align items horizontally */
+  border: 2px solid red; /* Add red border */
+  background-color: #001f3f; /* Dark blue background */
 }
 
+/* Styles for sections */
 section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 2px solid green;
-  width: 100%;
-  padding: 10px;
-  margin: 5px;
-  background-color: #ffffff;
+  display: flex; /* Use flexbox layout */
+  justify-content: space-around; /* Distribute items evenly along the main axis */
+  align-items: center; /* Center align items vertically */
+  border: 2px solid green; /* Add green border */
+  width: 100%; /* Set width to 100% */
+  padding: 10px; /* Add padding */
+  margin: 5px; /* Add margin */
+  background-color: #ffffff; /* White background */
 }
 
+/* Responsive design for sections */
 section {
-  margin: 5px;
-  box-sizing: border-box;
-  width: 48%;
-  /*responsive design*/
+  margin: 5px; /* Add margin */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  width: 48%; /* Set width to 48% */
 }
 
+/* Styles for article */
 article {
-  grid-gap: 10px;
+  grid-gap: 10px; /* Set gap between grid items */
 }
 
+/* Styles for article */
 article {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Wrap items to the next line when they exceed container width */
 }
 
-
+/* Styles for image container */
 .image-container {
-  display: flex;
-  justify-content: center;
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center align items horizontally */
   width: 100%; /* Ensure full width */
 }

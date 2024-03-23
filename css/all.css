@@ -1,73 +1,78 @@
+/* Styles for the navigation bar */
 nav {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  background-color: #001f3f;
-  margin: 5px;
-  padding: 10px 5px;
-  align-items: center; /* จัดกลุ่มสมดุลตรงกลาง */
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(6, 1fr); /* Divide into 6 equal columns */
+  background-color: #001f3f; /* Set background color */
+  margin: 5px; /* Add margin */
+  padding: 10px 5px; /* Add padding */
+  align-items: center; /* Center align items vertically */
 }
 
+/* Styles for navigation links */
 nav a {
-  text-decoration: none; /* เอา underline ออก */
-  color: #ffffff; /* สีของตัวหนังสือ */
-  font-size: 25px; /* ขนาดตัวหนังสือ */
-  padding: 35px; /* ขนาดช่องรอบตัวหนังสือ */
+  text-decoration: none; /* Remove underline */
+  color: #ffffff; /* Set text color */
+  font-size: 25px; /* Set font size */
+  padding: 35px; /* Set padding around text */
 }
 
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around; /* กระจายองค์ประกอบในขั้นตอนการแสดงผล */
-  }
-  
-  li {
-    float: left;
-  }
-  
-  
-  
-  .menu {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .menu:hover {
-    background-color: #555;
-  }
-  
-  .dropdown {
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    display: block;
-    text-decoration: none;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #555;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  
-  
+/* Styles for unordered list */
+ul {
+  list-style-type: none; /* Remove list bullets */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  display: flex; /* Use flexbox layout */
+  justify-content: space-around; /* Distribute items evenly */
+}
+
+/* Styles for list items */
+li {
+  float: left; /* Float items to the left */
+}
+
+/* Styles for menu items */
+.menu {
+  display: block; /* Display as block element */
+  color: white; /* Set text color */
+  text-align: center; /* Center align text */
+  padding: 14px 16px; /* Set padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover styles for menu items */
+.menu:hover {
+  background-color: #555; /* Change background color on hover */
+}
+
+/* Styles for dropdown container */
+.dropdown {
+  display: inline-block; /* Display as inline block */
+}
+
+/* Styles for dropdown content */
+.dropdown-content {
+  display: none; /* Hide content by default */
+  position: absolute; /* Position content absolutely */
+  background-color: #333; /* Set background color */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Add box shadow */
+  z-index: 1; /* Set z-index */
+}
+
+/* Styles for dropdown links */
+.dropdown-content a {
+  color: white; /* Set text color */
+  padding: 12px 16px; /* Set padding */
+  display: block; /* Display as block element */
+  text-decoration: none; /* Remove underline */
+  text-align: left; /* Left align text */
+}
+
+/* Hover styles for dropdown links */
+.dropdown-content a:hover {
+  background-color: #555; /* Change background color on hover */
+}
+
+/* Display dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block; /* Show content on hover */
+}
