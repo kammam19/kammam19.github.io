@@ -39,7 +39,7 @@ main {
   display: flex; /* Use flexbox layout */
   flex-direction: column; /* Arrange items vertically */
   align-items: center; /* Center align items horizontally */
-  border: 2px solid red; /* Add red border */
+  border: 2px solid ; /* Add  border */
   background-color: #001f3f; /* Dark blue background */
 }
 
@@ -48,7 +48,7 @@ section {
   display: flex; /* Use flexbox layout */
   justify-content: space-around; /* Distribute items evenly along the main axis */
   align-items: center; /* Center align items vertically */
-  border: 2px solid green; /* Add green border */
+  border: 2px solid ; /* Add border */
   width: 100%; /* Set width to 100% */
   padding: 10px; /* Add padding */
   margin: 5px; /* Add margin */
@@ -78,4 +78,13 @@ article {
   display: flex; /* Use flexbox layout */
   justify-content: center; /* Center align items horizontally */
   width: 100%; /* Ensure full width */
+}
+/* Styles for body */
+body{
+  background-color: #fedeca; /*  cream background */
+}
+/* Add this CSS to your existing CSS file */
+article video {
+  max-width: 20%;
+  height: auto;
 }

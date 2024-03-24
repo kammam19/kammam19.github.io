@@ -62,3 +62,8 @@ body {
     font-weight: bold; /* Set font weight to bold */
     color: blueviolet; /* Set text color */
 }
+
+/* Styles for body */
+body{
+    background-color:rgb(88, 219, 255); /* blue background */
+}
